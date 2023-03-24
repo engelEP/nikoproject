@@ -1,0 +1,19 @@
+{
+  "name": "nico-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "sass": "^1.59.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

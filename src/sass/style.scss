@@ -1,0 +1,17 @@
+//Bootstrap Import
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//variables to use in the document
+@import 'variables';
+
+//basic configuration of the document
+@import 'base';
+
+//mixins to use in the document
+@import 'mixins';
+
+//import to use fonts in the document
+@import 'fonts';
+
+//style of each page
+@import 'index';
