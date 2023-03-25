@@ -1,30 +1,16 @@
 .skill{
     background-color: $gray-background;
     padding: 20px;
+    padding-bottom: 50px;
 
     &-span{
-        font-family: $text;
-        font-size: 13px;
-        color:$black;
-        letter-spacing: 3px;
-        font-weight: 500;
-        text-align: center;
-        display: block;
-        margin-bottom: 20px;
+        @include style_span();
     }
     &-title{
-        text-align: center;
-        font-weight: 700;
-        font-size: 40px;
-        color: $black;
-        margin-bottom: 40px;
-        font-family: $text;
+        @include style_title();
     }
     &-text{
-        text-align: center;
-        color: $gray-text;
-        font-size: 16px;
-        margin-bottom: 75px;
+        @include style_text();
     }
     &-percentage{
         text-align: center;
