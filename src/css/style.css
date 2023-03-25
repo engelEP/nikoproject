@@ -10938,4 +10938,40 @@ html {
   margin-bottom: 40px;
 }
 
+.blue {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+  background-color: #0075f6;
+  height: 300px;
+  padding: 0px;
+}
+.blue-wraper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.blue-wraper-title {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.blue-wraper-title.bold {
+  font-weight: 700;
+}
+.blue-wraper-button {
+  padding: 20px 32px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 0.2rem;
+}
+.blue-wraper-button:hover {
+  color: black;
+  background-color: lightblue;
+}
+
 /*# sourceMappingURL=style.css.map */
