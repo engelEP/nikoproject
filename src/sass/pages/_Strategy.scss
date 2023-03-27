@@ -1,7 +1,7 @@
 .strategy{
     background-color: $gray-background;
     padding: 20px;
-    padding-bottom: 50px;
+    margin-bottom: 130px;
 
     &-span{
         @include style_span();
@@ -62,7 +62,7 @@
 
 
 
-        i{
+        & i{
             color: $strategy-icon-color;
             font-size: 47px;
             margin-bottom: 40px;
