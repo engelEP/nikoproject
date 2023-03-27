@@ -1,0 +1,59 @@
+.form{
+    padding: 0px;
+    margin-bottom: 130px;
+
+    &-span{
+        @include style_span();
+        text-transform: uppercase;
+    }
+    &-title{
+        @include style_title();
+    }
+    &-text{
+        @include style_text();
+        &.blog{
+            text-align: left;
+            padding: 0px;
+        }
+    }
+
+    &-wraper{
+        background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/about-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &-design{
+            padding: 30px;
+        }
+        &-img{
+            height: 570px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-button{
+            padding: 20px 40px 20px 40px;
+            background-color: $blue-section;
+            font-size: 16px;
+            font-weight: 600;
+            color: $white;
+            border: 1px solid $white;
+            &:hover{
+                background-color: $blue-button;
+            }
+        }
+    }
+}
+
+.form-control{
+    &.text{
+        margin-bottom: 30px;
+        background: rgba(5, 7, 12, 0.8);
+        border: 1px solid $blue-section;
+    }
+    &.resizable{
+        margin-bottom: 30px;
+        resize: none;
+        border: 1px solid $blue-section;
+        background: rgba(5, 7, 12, 0.8);
+    }
+}
