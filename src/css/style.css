@@ -10974,4 +10974,30 @@ html {
   background-color: lightblue;
 }
 
+.banner {
+  height: 500px;
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/imagen1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.banner-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  border: 1px solid white;
+  color: white;
+  padding: 20px 40px 20px 40px;
+  font-weight: 600;
+}
+.banner-button:hover {
+  color: white;
+  background-color: #0075f6;
+}
+
 /*# sourceMappingURL=style.css.map */
