@@ -1,0 +1,12 @@
+.footer{
+    background-color: rgba($color: $blue-section, $alpha: 0.8);
+    padding: 15px;
+    &-list{
+        color: $white;
+        font-size: 20px;
+        font-weight: 600;
+        &-item{
+            list-style: none;
+        }
+    }
+}

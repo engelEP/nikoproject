@@ -10980,7 +10980,7 @@ body {
 
 .banner {
   height: 500px;
-  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/imagen1.jpg");
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11129,9 +11129,10 @@ body {
   padding: 0px;
 }
 .form-wraper {
-  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/about-1.jpg");
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .form-wraper-design {
   padding: 30px;
@@ -11143,14 +11144,14 @@ body {
 }
 .form-wraper-button {
   padding: 20px 40px 20px 40px;
-  background-color: #0075f6;
+  background-color: rgba(0, 117, 246, 0.4);
   font-size: 16px;
   font-weight: 600;
   color: white;
   border: 1px solid white;
 }
 .form-wraper-button:hover {
-  background-color: rgb(109, 194, 223);
+  background-color: rgba(0, 117, 246, 0.8);
 }
 
 .form-control.text {
@@ -11163,6 +11164,19 @@ body {
   resize: none;
   border: 1px solid #0075f6;
   background: rgba(5, 7, 12, 0.8);
+}
+
+.footer {
+  background-color: rgba(0, 117, 246, 0.8);
+  padding: 15px;
+}
+.footer-list {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer-list-item {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
