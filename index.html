@@ -9,6 +9,26 @@
 </head>
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header-wraper">
+                <a href="#" class="header-logo">N</a>
+                <label for="menuCheck" class="header-hamburger mb-0">
+                    <i class="fas fa-bars"></i>&nbsp;&nbsp;<span>MENU</span>
+                </label>
+                <input autocomplete="off" type="checkbox" name="menuCheck" id="menuCheck" class="header-hamburgerCheck d-none">
+                <nav class="header-nav">
+                    <a class="header-item home" href="#">HOME</a>
+                    <!-- <a class="header-item" href="#">About</a> -->
+                    <a class="header-item" href="#section-skill">Skills</a>
+                    <a class="header-item" href="#strategy-section">Strategy</a>
+                    <a class="header-item" href="#blog-section">Blog</a>
+                    <a class="header-item" href="#contact-section">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <section class="banner">
         <a href="#section-skill" class="banner-button">go it</a>
         <!-- <div class="banner-wraper">
@@ -86,7 +106,7 @@
         </div>
     </section>
 
-    <section class="strategy">
+    <section class="strategy" id="strategy-section">
         <div class="container">
             <h2 class="strategy-title">
                 <span class="strategy-span">What I Do</span>
@@ -146,7 +166,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog-section">
         <div class="container">
             <h2 class="blog-title">
                 <span class="blog-span">blog</span>
@@ -215,7 +235,7 @@
         </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="contact-section">
         <div class="container">
             <h2 class="form-title">
                 <span class="form-span">CONTACT</span>
