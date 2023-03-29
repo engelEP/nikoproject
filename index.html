@@ -9,13 +9,33 @@
 </head>
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header-wraper">
+                <a href="#" class="header-logo">N</a>
+                <label for="menuCheck" class="header-hamburger mb-0">
+                    <i class="fas fa-bars"></i>&nbsp;&nbsp;<span>MENU</span>
+                </label>
+                <input autocomplete="off" type="checkbox" name="menuCheck" id="menuCheck" class="header-hamburgerCheck d-none">
+                <nav class="header-nav">
+                    <a class="header-item home" href="#">HOME</a>
+                    <!-- <a class="header-item" href="#">About</a> -->
+                    <a class="header-item" href="#section-skill">Skills</a>
+                    <a class="header-item" href="#strategy-section">Strategy</a>
+                    <a class="header-item" href="#blog-section">Blog</a>
+                    <a class="header-item" href="#contact-section">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <section class="banner">
-        <a href="#" class="banner-button">go it</a>
+        <a href="#section-skill" class="banner-button">go it</a>
         <!-- <div class="banner-wraper">
         </div> -->
     </section>
 
-    <section class="skill">
+    <section class="skill" id="section-skill">
         <div class="container">
             <h2 class="skill-title">
                 <span class="skill-span">Skills</span>
@@ -86,7 +106,7 @@
         </div>
     </section>
 
-    <section class="strategy">
+    <section class="strategy" id="strategy-section">
         <div class="container">
             <h2 class="strategy-title">
                 <span class="strategy-span">What I Do</span>
@@ -146,7 +166,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog-section">
         <div class="container">
             <h2 class="blog-title">
                 <span class="blog-span">blog</span>
@@ -215,7 +235,7 @@
         </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="contact-section">
         <div class="container">
             <h2 class="form-title">
                 <span class="form-span">CONTACT</span>
@@ -257,6 +277,53 @@
                             <button type="submit" class="form-wraper-button">Send Message</button>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <i class="fa-brands fa-square-gitlab"></i>
+                            GitLab
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS3
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa-brands fa-html5"></i>
+                            HTML5
+                        </li>         
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            Bootstrap
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa-brands fa-square-js"></i>
+                            JavaScript
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 offset-md-2 col-md-4">
+                    <ul class="footer-list">
+                        <li class="footer-list-item">
+                            <i class="fa-solid fa-phone"></i>
+                            +505 8844 9282
+                        </li>
+                        <li class="footer-list-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            engelpa26@gmail.com
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

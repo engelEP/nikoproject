@@ -10980,7 +10980,7 @@ body {
 
 .banner {
   height: 500px;
-  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/imagen1.jpg");
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -10992,17 +10992,17 @@ body {
 }
 .banner-button {
   text-transform: uppercase;
-  text-decoration: none;
-  background-color: transparent;
-  border-radius: 0.2rem;
-  border: 1px solid white;
-  color: white;
   padding: 20px 40px 20px 40px;
+  background-color: rgba(0, 117, 246, 0.4);
+  font-size: 16px;
   font-weight: 600;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
 }
 .banner-button:hover {
+  background-color: rgba(0, 117, 246, 0.8);
   color: white;
-  background-color: #0075f6;
 }
 
 .blog {
@@ -11129,9 +11129,10 @@ body {
   padding: 0px;
 }
 .form-wraper {
-  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/about-1.jpg");
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .form-wraper-design {
   padding: 30px;
@@ -11143,14 +11144,14 @@ body {
 }
 .form-wraper-button {
   padding: 20px 40px 20px 40px;
-  background-color: #0075f6;
+  background-color: rgba(0, 117, 246, 0.4);
   font-size: 16px;
   font-weight: 600;
   color: white;
   border: 1px solid white;
 }
 .form-wraper-button:hover {
-  background-color: rgb(109, 194, 223);
+  background-color: rgba(0, 117, 246, 0.8);
 }
 
 .form-control.text {
@@ -11163,6 +11164,133 @@ body {
   resize: none;
   border: 1px solid #0075f6;
   background: rgba(5, 7, 12, 0.8);
+}
+
+.footer {
+  background-color: rgba(0, 117, 246, 0.8);
+  padding: 15px;
+}
+.footer-list {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer-list-item {
+  list-style: none;
+}
+
+.header {
+  height: 65px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+.header-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: block;
+  font-weight: 900;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.header-logo:hover {
+  color: black;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-item {
+  text-decoration: none;
+  position: relative;
+  list-style-type: none;
+  margin: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+.header-item:hover {
+  color: #0075f6;
+}
+.header-item:hover::after {
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 100%;
+}
+.header-item::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  background-color: #0075f6;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  margin: 0 auto;
+  transition: all 0.2s ease;
+}
+.header-hamburger {
+  display: none;
+}
+@media (max-width: 575.98px) {
+  .header {
+    background-color: black;
+    height: 50px;
+  }
+  .header-hamburger {
+    display: block;
+    color: white;
+  }
+  .header-logo {
+    color: white;
+  }
+  .header-logo:hover {
+    color: white;
+  }
+  .header-wraper {
+    background-color: black;
+    padding: 10px;
+  }
+  .header-nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: none;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 100vw;
+    transition: height 0.3s ease;
+    z-index: 10;
+  }
+  .header-item {
+    color: white;
+    margin-top: 15px;
+    margin-left: 0;
+    width: 100vh;
+    padding: 10px;
+  }
+  .header-item:hover {
+    color: white;
+    background-color: rgba(0, 117, 246, 0.8);
+  }
+  .header-item::after {
+    display: none;
+  }
+  .header-hamburgerCheck:checked ~ .header-nav {
+    height: 380px;
+  }
+  .header i {
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

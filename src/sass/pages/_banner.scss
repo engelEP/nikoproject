@@ -1,6 +1,6 @@
 .banner{
     height: 500px;
-    background:linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/imagen1.jpg");
+    background:linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -11,16 +11,16 @@
     margin-bottom: 130px;
     &-button{
         text-transform: uppercase;
-        text-decoration: none;
-        background-color: transparent;
-        border-radius: 0.2rem;
-        border: 1px solid $white;
-        color: $white;
         padding: 20px 40px 20px 40px;
+        background-color: rgba(0, 117, 246, 0.4);;
+        font-size: 16px;
         font-weight: 600;
+        color: $white;
+        text-decoration: none;
+        border: 1px solid $white;
         &:hover{
+            background-color: rgba(0, 117, 246, 0.8);
             color: $white;
-            background-color: $blue-section;
         }
     }
 }

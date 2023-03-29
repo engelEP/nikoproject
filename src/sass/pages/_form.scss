@@ -18,9 +18,10 @@
     }
 
     &-wraper{
-        background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/about-1.jpg");
+        background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
 
         &-design{
             padding: 30px;
@@ -32,13 +33,13 @@
         }
         &-button{
             padding: 20px 40px 20px 40px;
-            background-color: $blue-section;
+            background-color: rgba(0, 117, 246, 0.4);;
             font-size: 16px;
             font-weight: 600;
             color: $white;
             border: 1px solid $white;
             &:hover{
-                background-color: $blue-button;
+                background-color: rgba(0, 117, 246, 0.8);
             }
         }
     }
