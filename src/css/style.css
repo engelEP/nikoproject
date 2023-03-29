@@ -11270,7 +11270,6 @@ body {
     width: 100vw;
     transition: height 0.3s ease;
     z-index: 10;
-    padding-bottom: 20px;
   }
   .header-item {
     color: white;
