@@ -23,3 +23,17 @@
     margin-bottom: 75px;
     font-family: $text;
 }
+@mixin style_button($padding_h, $padding_w){
+
+    padding: $padding_h $padding_w $padding_h $padding_w;
+    background-color: rgba(0, 117, 246, 0.4);;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    border: 1px solid $white;
+    text-decoration: none;
+    &:hover{
+        background-color: rgba(0, 117, 246, 0.8);
+        color: $white;
+    }
+}

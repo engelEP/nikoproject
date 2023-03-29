@@ -10991,14 +10991,14 @@ body {
   margin-bottom: 130px;
 }
 .banner-button {
-  text-transform: uppercase;
-  padding: 20px 40px 20px 40px;
+  padding: 15px 40px 15px 40px;
   background-color: rgba(0, 117, 246, 0.4);
   font-size: 16px;
   font-weight: 600;
   color: white;
-  text-decoration: none;
   border: 1px solid white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .banner-button:hover {
   background-color: rgba(0, 117, 246, 0.8);
@@ -11149,9 +11149,11 @@ body {
   font-weight: 600;
   color: white;
   border: 1px solid white;
+  text-decoration: none;
 }
 .form-wraper-button:hover {
   background-color: rgba(0, 117, 246, 0.8);
+  color: white;
 }
 
 .form-control.text {
@@ -11291,6 +11293,33 @@ body {
   .header i {
     color: white;
   }
+}
+
+.scrollTop {
+  padding: 15px 15px 15px 15px;
+  background-color: rgba(0, 117, 246, 0.4);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease;
+}
+.scrollTop:hover {
+  background-color: rgba(0, 117, 246, 0.8);
+  color: white;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 1s ease;
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */
