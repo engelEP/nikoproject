@@ -1,6 +1,7 @@
 .strategy{
     padding: 20px;
     margin-bottom: 130px;
+    overflow: hidden;
 
     &-span{
         @include style_span();
@@ -64,4 +65,8 @@
             margin-bottom: 40px;
         }
     }
+}
+
+.visibleStrategy{
+    @include AnimationY(2.5s, 0, 200px);
 }

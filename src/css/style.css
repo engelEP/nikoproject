@@ -10864,6 +10864,7 @@ body {
 .strategy {
   padding: 20px;
   margin-bottom: 130px;
+  overflow: hidden;
 }
 .strategy-span {
   font-family: "Poppins", sans-serif;
@@ -10942,6 +10943,21 @@ body {
   margin-bottom: 40px;
 }
 
+.visibleStrategy {
+  animation-name: animationY;
+  animation-duration: 2.5s;
+}
+@keyframes animationY {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .blue {
   font-family: "Poppins", sans-serif;
   margin-bottom: 120px;
@@ -11008,6 +11024,7 @@ body {
 .blog {
   padding: 20px;
   margin-bottom: 130px;
+  overflow: hidden;
 }
 .blog-span {
   font-family: "Poppins", sans-serif;
@@ -11094,9 +11111,25 @@ body {
   color: #0075f6;
 }
 
+.visibleBlog {
+  animation-name: animationX;
+  animation-duration: 3s;
+}
+@keyframes animationX {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .form {
   padding: 0px;
   margin-bottom: 130px;
+  overflow: hidden;
 }
 .form-span {
   font-family: "Poppins", sans-serif;
@@ -11168,6 +11201,36 @@ body {
   background: rgba(5, 7, 12, 0.8);
 }
 
+.visibleFormImg {
+  animation-name: animationY;
+  animation-duration: 2s;
+}
+@keyframes animationY {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.visibleForm {
+  animation-name: animationX;
+  animation-duration: 3s;
+}
+@keyframes animationX {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .footer {
   background-color: rgba(0, 117, 246, 0.8);
   padding: 15px;
@@ -11186,6 +11249,7 @@ body {
   position: fixed;
   background-color: white;
   width: 100%;
+  z-index: 1;
 }
 .header-wraper {
   display: flex;
@@ -11295,7 +11359,7 @@ body {
   }
 }
 
-.scrollTop {
+.buttonScroll {
   padding: 15px 15px 15px 15px;
   background-color: rgba(0, 117, 246, 0.4);
   font-size: 16px;
@@ -11311,7 +11375,7 @@ body {
   transform: translateY(100px);
   transition: all 1s ease;
 }
-.scrollTop:hover {
+.buttonScroll:hover {
   background-color: rgba(0, 117, 246, 0.8);
   color: white;
 }

@@ -1,6 +1,7 @@
 .form{
     padding: 0px;
     margin-bottom: 130px;
+    overflow: hidden;
 
     &-span{
         @include style_span();
@@ -49,4 +50,12 @@
         border: 1px solid $blue-section;
         background: rgba(5, 7, 12, 0.8);
     }
+}
+
+.visibleFormImg{
+    @include AnimationY(2s, 0, 200px);
+}
+
+.visibleForm{
+    @include AnimationX(3s, 0, 300px);
 }

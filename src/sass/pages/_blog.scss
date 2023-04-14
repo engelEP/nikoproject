@@ -1,7 +1,7 @@
 .blog{
     padding: 20px;
     margin-bottom: 130px;
-    
+    overflow: hidden;
 
     &-span{
         @include style_span();
@@ -72,4 +72,8 @@
         }
     }
     
+}
+
+.visibleBlog{
+    @include AnimationX(3s, 0, 300px);
 }
