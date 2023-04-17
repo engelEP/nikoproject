@@ -75,5 +75,21 @@
 }
 
 .visibleBlog{
-    @include AnimationX(3s, 0, 300px);
+    animation-name: animationBlog;
+    animation-duration: 2s;
+
+    @keyframes animationBlog {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateX(300px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }

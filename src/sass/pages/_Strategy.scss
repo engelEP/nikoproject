@@ -68,5 +68,22 @@
 }
 
 .visibleStrategy{
-    @include AnimationY(2.5s, 0, 200px);
+
+    animation-name: animationStrategy;
+    animation-duration: 2s;
+
+    @keyframes animationStrategy {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateY(200px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 }

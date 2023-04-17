@@ -10944,10 +10944,10 @@ body {
 }
 
 .visibleStrategy {
-  animation-name: animationY;
-  animation-duration: 2.5s;
+  animation-name: animationStrategy;
+  animation-duration: 2s;
 }
-@keyframes animationY {
+@keyframes animationStrategy {
   from {
     opacity: 0;
     transform: translateY(200px);
@@ -11112,10 +11112,10 @@ body {
 }
 
 .visibleBlog {
-  animation-name: animationX;
-  animation-duration: 3s;
+  animation-name: animationBlog;
+  animation-duration: 2s;
 }
-@keyframes animationX {
+@keyframes animationBlog {
   from {
     opacity: 0;
     transform: translateX(300px);
@@ -11202,25 +11202,25 @@ body {
 }
 
 .visibleFormImg {
-  animation-name: animationY;
+  animation-name: animationFormImg;
   animation-duration: 2s;
 }
-@keyframes animationY {
+@keyframes animationFormImg {
   from {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateX(-300px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
 .visibleForm {
-  animation-name: animationX;
-  animation-duration: 3s;
+  animation-name: animationForm;
+  animation-duration: 2s;
 }
-@keyframes animationX {
+@keyframes animationForm {
   from {
     opacity: 0;
     transform: translateX(300px);
