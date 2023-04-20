@@ -11158,12 +11158,14 @@ body {
   margin-bottom: 30px;
   background: rgba(5, 7, 12, 0.8);
   border: 1px solid #0075f6;
+  color: white;
 }
 .form-control.resizable {
   margin-bottom: 30px;
   resize: none;
   border: 1px solid #0075f6;
   background: rgba(5, 7, 12, 0.8);
+  color: white;
 }
 
 .footer {

@@ -50,11 +50,13 @@
         margin-bottom: 30px;
         background: rgba(5, 7, 12, 0.8);
         border: 1px solid $blue-section;
+        color: $white;
     }
     &.resizable{
         margin-bottom: 30px;
         resize: none;
         border: 1px solid $blue-section;
         background: rgba(5, 7, 12, 0.8);
+        color: $white;
     }
 }
