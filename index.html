@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
     <link rel="stylesheet" href="src/css/style.css">
     <title>Niko Project</title>
 </head>
@@ -29,7 +30,7 @@
         </div>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="section-banner">
         <a href="#section-skill" class="banner-button">go it</a>
         <!-- <div class="banner-wraper">
         </div> -->
@@ -47,13 +48,13 @@
                 Consonantia
             </p>
 
-            <div class="row">
+            <div class="row" id="section-percentage-id">
                 <div class="col-12 col-md-6">
                     <div class="skill-percentage">
                         <p class="skill-percentage-text">Photoshop </p>
                         <span class="skill-percentage-number">75%</span>
                         <div class="skill-percentage-bar">
-                            <div class="skill-percentage-bar full Photoshop"></div>
+                            <div class="skill-percentage-bar empty"></div>
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,7 @@
                         <p class="skill-percentage-text">JQuery </p>
                         <span class="skill-percentage-number">60%</span>
                         <div class="skill-percentage-bar">
-                            <div class="skill-percentage-bar full JQuery"></div>
+                            <div class="skill-percentage-bar empty"></div>
                         </div>
                     </div>
                 </div>
@@ -71,7 +72,7 @@
                         <p class="skill-percentage-text">HTML5 </p>
                         <span class="skill-percentage-number">85%</span>
                         <div class="skill-percentage-bar">
-                            <div class="skill-percentage-bar full HTML5"></div>
+                            <div class="skill-percentage-bar empty"></div>
                         </div>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
                         <p class="skill-percentage-text">CSS3 </p>
                         <span class="skill-percentage-number">90%</span>
                         <div class="skill-percentage-bar">
-                            <div class="skill-percentage-bar full CSS3"></div>
+                            <div class="skill-percentage-bar empty"></div>
                         </div>
                     </div>
                 </div>
@@ -89,7 +90,7 @@
                         <p class="skill-percentage-text">WordPress </p>
                         <span class="skill-percentage-number">70%</span>
                         <div class="skill-percentage-bar">
-                            <div class="skill-percentage-bar full WordPress"></div>
+                            <div class="skill-percentage-bar empty"></div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +99,7 @@
                         <p class="skill-percentage-text">SEO </p>
                         <span class="skill-percentage-number">80%</span>
                         <div class="skill-percentage-bar">
-                            <div class="skill-percentage-bar full SEO"></div>
+                            <div class="skill-percentage-bar empty"></div>
                         </div>
                     </div>
                 </div>
@@ -121,30 +122,33 @@
                     <div class="strategy-wraper">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <a href="#" class="strategy-wraper-title">EXPLORE</a>
-
-                        <li class="strategy-wraper-text">Design Sprints</li>
-                        <li class="strategy-wraper-text">Product Strategy</li>
-                        <li class="strategy-wraper-text">UX Strategy</li>
+                        <ul>
+                            <li class="strategy-wraper-text">Design Sprints</li>
+                            <li class="strategy-wraper-text">Product Strategy</li>
+                            <li class="strategy-wraper-text">UX Strategy</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="strategy-wraper">
                         <i class="fa-solid fa-flask-vial"></i>
                         <a href="#" class="strategy-wraper-title">create</a>
-
-                        <li class="strategy-wraper-text">Information</li>
-                        <li class="strategy-wraper-text">UX/UI Design</li>
-                        <li class="strategy-wraper-text">Branding</li>
+                        <ul>
+                            <li class="strategy-wraper-text">Information</li>
+                            <li class="strategy-wraper-text">UX/UI Design</li>
+                            <li class="strategy-wraper-text">Branding</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="strategy-wraper">
                         <i class="fa-solid fa-box-open"></i>
                         <a href="#" class="strategy-wraper-title">learn</a>
-    
-                        <li class="strategy-wraper-text">Prototyping</li>
-                        <li class="strategy-wraper-text">User Testing</li>
-                        <li class="strategy-wraper-text">UI Testing</li>
+                        <ul>
+                            <li class="strategy-wraper-text">Prototyping</li>
+                            <li class="strategy-wraper-text">User Testing</li>
+                            <li class="strategy-wraper-text">UI Testing</li>
+                        </ul>
                     </div>
                 </div> 
             </div>
@@ -328,7 +332,10 @@
             </div>
         </div>
     </section>
-
+    <a href="#" class="buttonScroll" id="buttonScroll-id">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="src/js/index.js" type="module"></script>
     <script src="https://kit.fontawesome.com/477dcc56c6.js" crossorigin="anonymous"></script>
 </body>
 </html>

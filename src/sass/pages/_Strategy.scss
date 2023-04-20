@@ -1,6 +1,7 @@
 .strategy{
     padding: 20px;
     margin-bottom: 130px;
+    overflow: hidden;
 
     &-span{
         @include style_span();
@@ -62,6 +63,27 @@
             color: $strategy-icon-color;
             font-size: 47px;
             margin-bottom: 40px;
+        }
+    }
+}
+
+.visibleStrategy{
+
+    animation-name: animationStrategy;
+    animation-duration: 2s;
+
+    @keyframes animationStrategy {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateY(200px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }

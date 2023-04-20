@@ -1,6 +1,7 @@
 .form{
     padding: 0px;
     margin-bottom: 130px;
+    overflow: hidden;
 
     &-span{
         @include style_span();
@@ -32,15 +33,7 @@
             object-fit: cover;
         }
         &-button{
-            padding: 20px 40px 20px 40px;
-            background-color: rgba(0, 117, 246, 0.4);;
-            font-size: 16px;
-            font-weight: 600;
-            color: $white;
-            border: 1px solid $white;
-            &:hover{
-                background-color: rgba(0, 117, 246, 0.8);
-            }
+            @include style_button(20px, 40px);
         }
     }
 }
@@ -58,5 +51,45 @@
         border: 1px solid $blue-section;
         background: rgba(5, 7, 12, 0.8);
         color: $white;
+    }
+}
+
+.visibleFormImg{
+    animation-name: animationFormImg;
+    animation-duration: 2s;
+
+    @keyframes animationFormImg {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateX(-300px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+.visibleForm{
+    animation-name: animationForm;
+    animation-duration: 2s;
+
+    @keyframes animationForm {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateX(300px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
