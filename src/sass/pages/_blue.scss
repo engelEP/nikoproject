@@ -1,0 +1,35 @@
+.blue{
+    font-family: $text;
+    margin-bottom: 120px;
+    background-color: $blue-section;
+    height: 300px;
+    padding: 0px;
+    &-wraper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
+        &-title{
+            color: $white;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            &.bold{
+                font-weight: 700;
+            }
+        }
+        &-button{
+            padding: 20px 32px;
+            background-color: $white;
+            text-decoration: none;
+            color: $black;
+            border-radius: 0.2rem;
+            &:hover{
+                color: $black;
+                background-color: $blue-button;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.skill{
+    padding: 20px;
+    margin-bottom: 130px;
+
+    &-span{
+        @include style_span();
+    }
+    &-title{
+        @include style_title();
+    }
+    &-text{
+        @include style_text();
+    }
+    &-percentage{
+        text-align: center;
+        font-family: $text;
+        margin-bottom: 40px;
+        &-text{
+            color:$black;
+            text-align: left;
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &-number{
+            text-align: center;
+            color: $black;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        &-bar{
+
+            width: 100%;
+            height: 20px;
+            background-color: $background-bar-empty;
+            border-radius: 0.2rem; 
+        }
+        
+    }
+}
+
+.empty{
+    width: 0%;
+}        
+
+.full{
+    height: 20px;
+    background-color: $background-bar-full;
+    transition: all 2s ease 0.5s;
+}

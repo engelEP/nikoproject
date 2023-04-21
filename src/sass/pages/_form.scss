@@ -1,0 +1,95 @@
+.form{
+    padding: 0px;
+    margin-bottom: 130px;
+    overflow: hidden;
+
+    &-span{
+        @include style_span();
+        text-transform: uppercase;
+    }
+    &-title{
+        @include style_title();
+    }
+    &-text{
+        @include style_text();
+        &.blog{
+            text-align: left;
+            padding: 0px;
+        }
+    }
+
+    &-wraper{
+        background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        &-design{
+            padding: 30px;
+        }
+        &-img{
+            height: 570px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &-button{
+            @include style_button(20px, 40px);
+        }
+    }
+}
+
+.form-control{
+    &.text{
+        margin-bottom: 30px;
+        background: rgba(5, 7, 12, 0.8);
+        border: 1px solid $blue-section;
+        color: $white;
+    }
+    &.resizable{
+        margin-bottom: 30px;
+        resize: none;
+        border: 1px solid $blue-section;
+        background: rgba(5, 7, 12, 0.8);
+        color: $white;
+    }
+}
+
+.visibleFormImg{
+    animation-name: animationFormImg;
+    animation-duration: 2s;
+
+    @keyframes animationFormImg {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateX(-300px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+.visibleForm{
+    animation-name: animationForm;
+    animation-duration: 2s;
+
+    @keyframes animationForm {
+        from {
+            // margin-left: 100%;
+            // width: 300%;
+            opacity: 0;
+            transform: translateX(300px);
+        }
+        to{
+            // margin-left: 0%;
+            // width: 100%;
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}

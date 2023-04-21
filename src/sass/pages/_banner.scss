@@ -1,0 +1,16 @@
+.banner{
+    height: 500px;
+    background:linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url("../../../src/img/Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+    &-button{
+        @include style_button(15px, 40px);
+        text-transform: uppercase;
+    }
+}
